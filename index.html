@@ -1,1022 +1,558 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" style="color-scheme: light;">
+<html lang="en">
 
 <head>
-    <style type="text/css">
-        svg:not(:root).svg-inline--fa {
-            overflow: visible
-        }
-        
-        .svg-inline--fa {
-            display: inline-block;
-            font-size: inherit;
-            height: 1em;
-            overflow: visible;
-            vertical-align: -.125em
-        }
-        
-        .svg-inline--fa.fa-lg {
-            vertical-align: -.225em
-        }
-        
-        .svg-inline--fa.fa-w-1 {
-            width: .0625em
-        }
-        
-        .svg-inline--fa.fa-w-2 {
-            width: .125em
-        }
-        
-        .svg-inline--fa.fa-w-3 {
-            width: .1875em
-        }
-        
-        .svg-inline--fa.fa-w-4 {
-            width: .25em
-        }
-        
-        .svg-inline--fa.fa-w-5 {
-            width: .3125em
-        }
-        
-        .svg-inline--fa.fa-w-6 {
-            width: .375em
-        }
-        
-        .svg-inline--fa.fa-w-7 {
-            width: .4375em
-        }
-        
-        .svg-inline--fa.fa-w-8 {
-            width: .5em
-        }
-        
-        .svg-inline--fa.fa-w-9 {
-            width: .5625em
-        }
-        
-        .svg-inline--fa.fa-w-10 {
-            width: .625em
-        }
-        
-        .svg-inline--fa.fa-w-11 {
-            width: .6875em
-        }
-        
-        .svg-inline--fa.fa-w-12 {
-            width: .75em
-        }
-        
-        .svg-inline--fa.fa-w-13 {
-            width: .8125em
-        }
-        
-        .svg-inline--fa.fa-w-14 {
-            width: .875em
-        }
-        
-        .svg-inline--fa.fa-w-15 {
-            width: .9375em
-        }
-        
-        .svg-inline--fa.fa-w-16 {
-            width: 1em
-        }
-        
-        .svg-inline--fa.fa-w-17 {
-            width: 1.0625em
-        }
-        
-        .svg-inline--fa.fa-w-18 {
-            width: 1.125em
-        }
-        
-        .svg-inline--fa.fa-w-19 {
-            width: 1.1875em
-        }
-        
-        .svg-inline--fa.fa-w-20 {
-            width: 1.25em
-        }
-        
-        .svg-inline--fa.fa-pull-left {
-            margin-right: .3em;
-            width: auto
-        }
-        
-        .svg-inline--fa.fa-pull-right {
-            margin-left: .3em;
-            width: auto
-        }
-        
-        .svg-inline--fa.fa-border {
-            height: 1.5em
-        }
-        
-        .svg-inline--fa.fa-li {
-            width: 2em
-        }
-        
-        .svg-inline--fa.fa-fw {
-            width: 1.25em
-        }
-        
-        .fa-layers svg.svg-inline--fa {
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            position: absolute;
-            right: 0;
-            top: 0
-        }
-        
-        .fa-layers {
-            display: inline-block;
-            height: 1em;
-            position: relative;
-            text-align: center;
-            vertical-align: -.125em;
-            width: 1em
-        }
-        
-        .fa-layers svg.svg-inline--fa {
-            -webkit-transform-origin: center center;
-            transform-origin: center center
-        }
-        
-        .fa-layers-counter,
-        .fa-layers-text {
-            display: inline-block;
-            position: absolute;
-            text-align: center
-        }
-        
-        .fa-layers-text {
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            -webkit-transform-origin: center center;
-            transform-origin: center center
-        }
-        
-        .fa-layers-counter {
-            background-color: #ff253a;
-            border-radius: 1em;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            color: #fff;
-            height: 1.5em;
-            line-height: 1;
-            max-width: 5em;
-            min-width: 1.5em;
-            overflow: hidden;
-            padding: .25em;
-            right: 0;
-            text-overflow: ellipsis;
-            top: 0;
-            -webkit-transform: scale(.25);
-            transform: scale(.25);
-            -webkit-transform-origin: top right;
-            transform-origin: top right
-        }
-        
-        .fa-layers-bottom-right {
-            bottom: 0;
-            right: 0;
-            top: auto;
-            -webkit-transform: scale(.25);
-            transform: scale(.25);
-            -webkit-transform-origin: bottom right;
-            transform-origin: bottom right
-        }
-        
-        .fa-layers-bottom-left {
-            bottom: 0;
-            left: 0;
-            right: auto;
-            top: auto;
-            -webkit-transform: scale(.25);
-            transform: scale(.25);
-            -webkit-transform-origin: bottom left;
-            transform-origin: bottom left
-        }
-        
-        .fa-layers-top-right {
-            right: 0;
-            top: 0;
-            -webkit-transform: scale(.25);
-            transform: scale(.25);
-            -webkit-transform-origin: top right;
-            transform-origin: top right
-        }
-        
-        .fa-layers-top-left {
-            left: 0;
-            right: auto;
-            top: 0;
-            -webkit-transform: scale(.25);
-            transform: scale(.25);
-            -webkit-transform-origin: top left;
-            transform-origin: top left
-        }
-        
-        .fa-lg {
-            font-size: 1.3333333333em;
-            line-height: .75em;
-            vertical-align: -.0667em
-        }
-        
-        .fa-xs {
-            font-size: .75em
-        }
-        
-        .fa-sm {
-            font-size: .875em
-        }
-        
-        .fa-1x {
-            font-size: 1em
-        }
-        
-        .fa-2x {
-            font-size: 2em
-        }
-        
-        .fa-3x {
-            font-size: 3em
-        }
-        
-        .fa-4x {
-            font-size: 4em
-        }
-        
-        .fa-5x {
-            font-size: 5em
-        }
-        
-        .fa-6x {
-            font-size: 6em
-        }
-        
-        .fa-7x {
-            font-size: 7em
-        }
-        
-        .fa-8x {
-            font-size: 8em
-        }
-        
-        .fa-9x {
-            font-size: 9em
-        }
-        
-        .fa-10x {
-            font-size: 10em
-        }
-        
-        .fa-fw {
-            text-align: center;
-            width: 1.25em
-        }
-        
-        .fa-ul {
-            list-style-type: none;
-            margin-left: 2.5em;
-            padding-left: 0
-        }
-        
-        .fa-ul>li {
-            position: relative
-        }
-        
-        .fa-li {
-            left: -2em;
-            position: absolute;
-            text-align: center;
-            width: 2em;
-            line-height: inherit
-        }
-        
-        .fa-border {
-            border: solid .08em #eee;
-            border-radius: .1em;
-            padding: .2em .25em .15em
-        }
-        
-        .fa-pull-left {
-            float: left
-        }
-        
-        .fa-pull-right {
-            float: right
-        }
-        
-        .fa.fa-pull-left,
-        .fab.fa-pull-left,
-        .fal.fa-pull-left,
-        .far.fa-pull-left,
-        .fas.fa-pull-left {
-            margin-right: .3em
-        }
-        
-        .fa.fa-pull-right,
-        .fab.fa-pull-right,
-        .fal.fa-pull-right,
-        .far.fa-pull-right,
-        .fas.fa-pull-right {
-            margin-left: .3em
-        }
-        
-        .fa-spin {
-            -webkit-animation: fa-spin 2s infinite linear;
-            animation: fa-spin 2s infinite linear
-        }
-        
-        .fa-pulse {
-            -webkit-animation: fa-spin 1s infinite steps(8);
-            animation: fa-spin 1s infinite steps(8)
-        }
-        
-        @-webkit-keyframes fa-spin {
-            0% {
-                -webkit-transform: rotate(0);
-                transform: rotate(0)
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
-            }
-        }
-        
-        @keyframes fa-spin {
-            0% {
-                -webkit-transform: rotate(0);
-                transform: rotate(0)
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg)
-            }
-        }
-        
-        .fa-rotate-90 {
-            -webkit-transform: rotate(90deg);
-            transform: rotate(90deg)
-        }
-        
-        .fa-rotate-180 {
-            -webkit-transform: rotate(180deg);
-            transform: rotate(180deg)
-        }
-        
-        .fa-rotate-270 {
-            -webkit-transform: rotate(270deg);
-            transform: rotate(270deg)
-        }
-        
-        .fa-flip-horizontal {
-            -webkit-transform: scale(-1, 1);
-            transform: scale(-1, 1)
-        }
-        
-        .fa-flip-vertical {
-            -webkit-transform: scale(1, -1);
-            transform: scale(1, -1)
-        }
-        
-        .fa-flip-both,
-        .fa-flip-horizontal.fa-flip-vertical {
-            -webkit-transform: scale(-1, -1);
-            transform: scale(-1, -1)
-        }
-        
-         :root .fa-flip-both,
-         :root .fa-flip-horizontal,
-         :root .fa-flip-vertical,
-         :root .fa-rotate-180,
-         :root .fa-rotate-270,
-         :root .fa-rotate-90 {
-            -webkit-filter: none;
-            filter: none
-        }
-        
-        .fa-stack {
-            display: inline-block;
-            height: 2em;
-            position: relative;
-            width: 2.5em
-        }
-        
-        .fa-stack-1x,
-        .fa-stack-2x {
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            position: absolute;
-            right: 0;
-            top: 0
-        }
-        
-        .svg-inline--fa.fa-stack-1x {
-            height: 1em;
-            width: 1.25em
-        }
-        
-        .svg-inline--fa.fa-stack-2x {
-            height: 2em;
-            width: 2.5em
-        }
-        
-        .fa-inverse {
-            color: #fff
-        }
-        
-        .sr-only {
-            border: 0;
-            clip: rect(0, 0, 0, 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            width: 1px
-        }
-        
-        .sr-only-focusable:active,
-        .sr-only-focusable:focus {
-            clip: auto;
-            height: auto;
-            margin: 0;
-            overflow: visible;
-            position: static;
-            width: auto
-        }
-        
-        .svg-inline--fa .fa-primary {
-            fill: var(--fa-primary-color, currentColor);
-            opacity: 1;
-            opacity: var(--fa-primary-opacity, 1)
-        }
-        
-        .svg-inline--fa .fa-secondary {
-            fill: var(--fa-secondary-color, currentColor);
-            opacity: .4;
-            opacity: var(--fa-secondary-opacity, .4)
-        }
-        
-        .svg-inline--fa.fa-swap-opacity .fa-primary {
-            opacity: .4;
-            opacity: var(--fa-secondary-opacity, .4)
-        }
-        
-        .svg-inline--fa.fa-swap-opacity .fa-secondary {
-            opacity: 1;
-            opacity: var(--fa-primary-opacity, 1)
-        }
-        
-        .svg-inline--fa mask .fa-primary,
-        .svg-inline--fa mask .fa-secondary {
-            fill: #000
-        }
-        
-        .fad.fa-inverse {
-            color: #fff
-        }
-    </style>
     <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="assets/search.png">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tathya.AI - Fighting Misinformation using AI</title>
+    <meta name="description" content="Tathya.AI is an AI-powered Chrome extension that helps you fact-check any text on the web instantly. Combat misinformation and distinguish facts from fiction.">
+    <meta name="keywords" content="AI, Fact Check, Misinformation, Chrome Extension, Fake News, India">
+    <meta property="og:title" content="Tathya.AI - Fighting Misinformation using AI">
+    <meta property="og:description" content="AI-powered Chrome extension to fact-check any text on the web instantly.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#180027">
+    <link rel="icon" type="image/png" href="assets/search.png">
     <link rel="apple-touch-icon" href="assets/search.png">
-    <title>Tathya.AI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link href="assets/main.8074fb65.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <style>
-        /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
-        
-        *,
-         ::after,
-         ::before {
+        *, *::before, *::after {
             box-sizing: border-box;
-            border-width: 0;
-            border-style: solid;
-            border-color: #e5e7eb
+            margin: 0;
+            padding: 0;
         }
-        
-         ::after,
-         ::before {
-            --tw-content: ''
-        }
-        
+
         html {
-            line-height: 1.5;
-            -webkit-text-size-adjust: 100%;
-            -moz-tab-size: 4;
-            tab-size: 4;
-            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            font-feature-settings: normal;
-            font-variation-settings: normal
+            scroll-behavior: smooth;
         }
-        
+
         body {
-            margin: 0;
-            line-height: inherit
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #0a0015;
+            color: #e0d6ea;
+            line-height: 1.6;
+            overflow-x: hidden;
         }
-        
-        hr {
-            height: 0;
-            color: inherit;
-            border-top-width: 1px
+
+        /* Background gradient */
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 60% 50% at 50% 0%, rgba(88, 28, 135, 0.3) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 40% at 80% 50%, rgba(59, 7, 100, 0.2) 0%, transparent 60%),
+                #0a0015;
         }
-        
-        abbr:where([title]) {
-            -webkit-text-decoration: underline dotted;
-            text-decoration: underline dotted
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-size: inherit;
-            font-weight: inherit
-        }
-        
-        a {
-            color: inherit;
-            text-decoration: inherit
-        }
-        
-        b,
-        strong {
-            font-weight: bolder
-        }
-        
-        code,
-        kbd,
-        pre,
-        samp {
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-            font-size: 1em
-        }
-        
-        small {
-            font-size: 80%
-        }
-        
-        sub,
-        sup {
-            font-size: 75%;
-            line-height: 0;
-            position: relative;
-            vertical-align: baseline
-        }
-        
-        sub {
-            bottom: -.25em
-        }
-        
-        sup {
-            top: -.5em
-        }
-        
-        table {
-            text-indent: 0;
-            border-color: inherit;
-            border-collapse: collapse
-        }
-        
-        button,
-        input,
-        optgroup,
-        select,
-        textarea {
-            font-family: inherit;
-            font-feature-settings: inherit;
-            font-variation-settings: inherit;
-            font-size: 100%;
-            font-weight: inherit;
-            line-height: inherit;
-            color: inherit;
-            margin: 0;
-            padding: 0
-        }
-        
-        button,
-        select {
-            text-transform: none
-        }
-        
-        [type=button],
-        [type=reset],
-        [type=submit],
-        button {
-            -webkit-appearance: button;
-            background-color: transparent;
-            background-image: none
-        }
-        
-         :-moz-focusring {
-            outline: auto
-        }
-        
-         :-moz-ui-invalid {
-            box-shadow: none
-        }
-        
-        progress {
-            vertical-align: baseline
-        }
-        
-         ::-webkit-inner-spin-button,
-         ::-webkit-outer-spin-button {
-            height: auto
-        }
-        
-        [type=search] {
-            -webkit-appearance: textfield;
-            outline-offset: -2px
-        }
-        
-         ::-webkit-search-decoration {
-            -webkit-appearance: none
-        }
-        
-         ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            font: inherit
-        }
-        
-        summary {
-            display: list-item
-        }
-        
-        blockquote,
-        dd,
-        dl,
-        figure,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        hr,
-        p,
-        pre {
-            margin: 0
-        }
-        
-        fieldset {
-            margin: 0;
-            padding: 0
-        }
-        
-        legend {
-            padding: 0
-        }
-        
-        menu,
-        ol,
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0
-        }
-        
-        dialog {
-            padding: 0
-        }
-        
-        textarea {
-            resize: vertical
-        }
-        
-        input::placeholder,
-        textarea::placeholder {
-            opacity: 1;
-            color: #9ca3af
-        }
-        
-        [role=button],
-        button {
-            cursor: pointer
-        }
-        
-         :disabled {
-            cursor: default
-        }
-        
-        audio,
-        canvas,
-        embed,
-        iframe,
-        img,
-        object,
-        svg,
-        video {
-            display: block;
-            vertical-align: middle
-        }
-        
-        img,
-        video {
-            max-width: 100%;
-            height: auto
-        }
-        
-        [hidden] {
-            display: none
-        }
-        
-        *,
-         ::before,
-         ::after {
-            --tw-border-spacing-x: 0;
-            --tw-border-spacing-y: 0;
-            --tw-translate-x: 0;
-            --tw-translate-y: 0;
-            --tw-rotate: 0;
-            --tw-skew-x: 0;
-            --tw-skew-y: 0;
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            --tw-pan-x: ;
-            --tw-pan-y: ;
-            --tw-pinch-zoom: ;
-            --tw-scroll-snap-strictness: proximity;
-            --tw-gradient-from-position: ;
-            --tw-gradient-via-position: ;
-            --tw-gradient-to-position: ;
-            --tw-ordinal: ;
-            --tw-slashed-zero: ;
-            --tw-numeric-figure: ;
-            --tw-numeric-spacing: ;
-            --tw-numeric-fraction: ;
-            --tw-ring-inset: ;
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgb(59 130 246 / 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000;
-            --tw-shadow: 0 0 #0000;
-            --tw-shadow-colored: 0 0 #0000;
-            --tw-blur: ;
-            --tw-brightness: ;
-            --tw-contrast: ;
-            --tw-grayscale: ;
-            --tw-hue-rotate: ;
-            --tw-invert: ;
-            --tw-saturate: ;
-            --tw-sepia: ;
-            --tw-drop-shadow: ;
-            --tw-backdrop-blur: ;
-            --tw-backdrop-brightness: ;
-            --tw-backdrop-contrast: ;
-            --tw-backdrop-grayscale: ;
-            --tw-backdrop-hue-rotate: ;
-            --tw-backdrop-invert: ;
-            --tw-backdrop-opacity: ;
-            --tw-backdrop-saturate: ;
-            --tw-backdrop-sepia:
-        }
-        
-         ::backdrop {
-            --tw-border-spacing-x: 0;
-            --tw-border-spacing-y: 0;
-            --tw-translate-x: 0;
-            --tw-translate-y: 0;
-            --tw-rotate: 0;
-            --tw-skew-x: 0;
-            --tw-skew-y: 0;
-            --tw-scale-x: 1;
-            --tw-scale-y: 1;
-            --tw-pan-x: ;
-            --tw-pan-y: ;
-            --tw-pinch-zoom: ;
-            --tw-scroll-snap-strictness: proximity;
-            --tw-gradient-from-position: ;
-            --tw-gradient-via-position: ;
-            --tw-gradient-to-position: ;
-            --tw-ordinal: ;
-            --tw-slashed-zero: ;
-            --tw-numeric-figure: ;
-            --tw-numeric-spacing: ;
-            --tw-numeric-fraction: ;
-            --tw-ring-inset: ;
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgb(59 130 246 / 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000;
-            --tw-shadow: 0 0 #0000;
-            --tw-shadow-colored: 0 0 #0000;
-            --tw-blur: ;
-            --tw-brightness: ;
-            --tw-contrast: ;
-            --tw-grayscale: ;
-            --tw-hue-rotate: ;
-            --tw-invert: ;
-            --tw-saturate: ;
-            --tw-sepia: ;
-            --tw-drop-shadow: ;
-            --tw-backdrop-blur: ;
-            --tw-backdrop-brightness: ;
-            --tw-backdrop-contrast: ;
-            --tw-backdrop-grayscale: ;
-            --tw-backdrop-hue-rotate: ;
-            --tw-backdrop-invert: ;
-            --tw-backdrop-opacity: ;
-            --tw-backdrop-saturate: ;
-            --tw-backdrop-sepia:
-        }
-        
-        .container {
-            width: 100%
-        }
-        
-        @media (min-width: 640px) {
-            .container {
-                max-width: 640px
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .container {
-                max-width: 768px
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 1024px
-            }
-        }
-        
-        @media (min-width: 1280px) {
-            .container {
-                max-width: 1280px
-            }
-        }
-        
-        @media (min-width: 1536px) {
-            .container {
-                max-width: 1536px
-            }
-        }
-        
-        .w-full {
-            width: 100%
-        }
-        
-        .whitespace-nowrap {
-            white-space: nowrap
-        }
-        
-        .p-2 {
-            padding: 0.5rem
-        }
-        
-        .px-2 {
-            padding-left: 0.5rem;
-            padding-right: 0.5rem
-        }
-        
-        .py-1 {
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem
-        }
-        
-        .px-4 {
-            padding-left: 1rem;
-            padding-right: 1rem
-        }
-        
-        .py-4 {
-            padding-top: 1rem;
-            padding-bottom: 1rem
-        }
-        
-        .text-center {
-            text-align: center
-        }
-        
-        .text-xs {
-            font-size: 0.75rem;
-            line-height: 1rem
-        }
-        
-        .image-gallery {
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 2rem;
             display: flex;
-            justify-content: space-around;
-            margin-top: 2rem;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(10, 0, 21, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(139, 92, 246, 0.1);
         }
-        
-        .image-gallery img {
-            max-width: 45%;
+
+        .nav-logo img {
+            height: 36px;
+            width: auto;
+            display: block;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            color: #fff;
+            padding: 0.6rem 1.4rem;
             border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        
-        .image-gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 30px rgba(124, 58, 237, 0.4);
         }
-        
-        @media (min-width: 640px) {
-            .sm\:px-0 {
-                padding-left: 0px;
-                padding-right: 0px
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: transparent;
+            color: #c4b5fd;
+            padding: 0.6rem 1.4rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1.5px solid rgba(139, 92, 246, 0.4);
+            cursor: pointer;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: #a855f7;
+            color: #e9d5ff;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .hero-content {
+            max-width: 720px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            color: #c4b5fd;
+            padding: 0.35rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #b8a4ca;
+            max-width: 560px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Features */
+        .features {
+            padding: 6rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #9a8aae;
+            font-size: 1.05rem;
+            max-width: 540px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: rgba(139, 92, 246, 0.06);
+            border: 1px solid rgba(139, 92, 246, 0.12);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(139, 92, 246, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 1.25rem;
+            background: rgba(139, 92, 246, 0.15);
+            color: #a855f7;
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            font-size: 0.92rem;
+            color: #9a8aae;
+            line-height: 1.6;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 6rem 2rem;
+            background: rgba(139, 92, 246, 0.03);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .step-number {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0 auto 1rem;
+        }
+
+        .step h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .step p {
+            font-size: 0.9rem;
+            color: #9a8aae;
+        }
+
+        .demo-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .demo-images img {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .demo-images img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.2);
+        }
+
+        /* CTA */
+        .cta {
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .cta-box {
+            max-width: 640px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(99, 102, 241, 0.1));
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 20px;
+            padding: 3.5rem 2.5rem;
+        }
+
+        .cta-box h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+
+        .cta-box p {
+            color: #9a8aae;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid rgba(139, 92, 246, 0.1);
+            padding: 3rem 2rem 2rem;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-left img {
+            height: 28px;
+            width: auto;
+        }
+
+        .footer-left span {
+            color: #6b5f7a;
+            font-size: 0.85rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #8b7a9e;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #c4b5fd;
+        }
+
+        .founder-credit {
+            width: 100%;
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(139, 92, 246, 0.08);
+            margin-top: 0.5rem;
+        }
+
+        .founder-credit span {
+            color: #6b5f7a;
+            font-size: 0.85rem;
+        }
+
+        .founder-credit a {
+            color: #9a8aae;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .founder-credit a:hover {
+            color: #c4b5fd;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav {
+                padding: 0.8rem 1.25rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .demo-images {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-left {
+                flex-direction: column;
             }
         }
-
-        .footer a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
     </style>
-    <link rel="stylesheet" type="text/css" href="assets/Home.1e8c0cf6.chunk.css">
-    <meta name="keywords" content="AI, Fact Check, GenAI, Startup" data-react-helmet="true">
-    <style>
-        @import url(https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700&display=swap);
-    </style>
-    <style id="aby-style"></style>
 </head>
 
-<body class="chakra-ui-light">
-    <div id="root">
-        <div class="App">
-            <div id="tsparticles"><canvas data-generated="false" style="min-height: 100%; width: 100% !important; position: fixed !important; height: 100% !important; z-index: 0 !important; top: 0px !important; left: 0px !important; background-color: rgb(24, 0, 39); pointer-events: none;"
-                    aria-hidden="true" width="1005" height="786"></canvas></div>
-            <div class="nav-container">
-                <div></div>
-                <div></div>
-                <div class="nav" style="background-color: transparent; transition: all 0.5s ease 0s;">
-                    <div class="p-2" style="margin-right: 100px; cursor: pointer; background-color: transparent; box-shadow: none; border: none;">
-                        <a href="/">
-                            <div><img width="120px" height="45px" src="assets/logo.png" alt="Tathya.AI Logo"></div>
-                        </a>
-                    </div>
-                    <div class="nav-items" style="visibility: visible;">
-                        <a href="assets/FakeNewsChromeExtension.zip" target="_blank" rel="noreferrer"><button
-                            class="btn-know-more px-2 py-1 text-xs whitespace-nowrap">Download Now!</button>
-                        </a>
-                    </div>
-                </div>
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="/" class="nav-logo">
+            <img src="assets/logo.png" alt="Tathya.AI">
+        </a>
+        <a href="assets/FakeNewsChromeExtension.zip" class="btn-primary" download>
+            <i class="fa-brands fa-chrome"></i> Download Extension
+        </a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">AI-Powered Fact Checking</div>
+            <h1>Fighting <span class="highlight">Misinformation</span> with AI</h1>
+            <p>Empowering citizens to distinguish facts from fiction. Verify any claim on the web instantly with our Chrome extension.</p>
+            <div class="hero-buttons">
+                <a href="assets/FakeNewsChromeExtension.zip" class="btn-primary" download>
+                    <i class="fa-brands fa-chrome"></i> Download for Chrome
+                </a>
+                <a href="#how-it-works" class="btn-secondary">
+                    See How It Works <i class="fa-solid fa-arrow-down"></i>
+                </a>
             </div>
-            <div>
-                <div class="home firstPar" id="firstParallax">
-                    <div class="first__gloab" style="height: 100vh;">
-                        <div class="back__img__top">
-                            <div class="back__img__top__sat"></div>
-                        </div>
-                        <div class="middle__text">
-                            <div class="fan"><img src="assets/fact.png" alt=""></div>
-                            <h2 align="center">Fighting Misinformation using AI</h2>
-                            <p align="center">Empowering citizens to distinguish facts from fiction</p>
-                            <p align="center">
-                                <small>
-                                    Founder, Shashwat Aggarwal, Connect on 
-                                    <a href="https://www.linkedin.com/in/shashwataggarwal" target="_blank">LinkedIn</a>, 
-                                    <a href="https://github.com/imshashwataggarwal" target="_blank">GitHub</a>
-                                </small>
-                            </p>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="section-container">
+            <h2 class="section-title">Why Tathya.AI?</h2>
+            <p class="section-subtitle">Misinformation spreads fast. We give you the tools to stop it in its tracks.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Instant Verification</h3>
+                    <p>Select any text on any webpage and get real-time fact-check results from trusted sources in seconds.</p>
                 </div>
-                <div class="home secondPar" id="secondParallax">
-                    <div>
-                        <div class="react-parallax " style="position: relative; overflow: hidden;">
-                            <div class="react-parallax-content" style="position: relative;">
-                                <div class="first__gloab second__height">
-                                    <div class="back__img__second"></div>
-                                    <div class="middle__text">
-                                        <h2 align="center">How We Do!</h2>
-                                        <p align="center">Select any text, right-click, and fact-check the information. Our extension uses trusted sources to provide accurate and up-to-date information.</p>
-                                        <div class="image-gallery">
-                                            <img src="assets/working1.png" alt="Fact-Check Extension Image 1">
-                                            <img src="assets/working2.png" alt="Fact-Check Extension Image 2">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Trusted Sources</h3>
+                    <p>Our AI cross-references claims against verified databases and reputable news outlets for reliable results.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <h3>Built for India</h3>
+                    <p>Designed with the Indian context in mind, tackling misinformation that affects millions across the country.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Three simple steps to verify any claim on the web.</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Select Text</h3>
+                    <p>Highlight any claim or statement you want to verify on a webpage.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Right-Click</h3>
+                    <p>Use the right-click context menu to trigger the Tathya.AI fact-checker.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Results</h3>
+                    <p>Receive accurate, sourced information to verify or debunk the claim.</p>
+                </div>
+            </div>
+            <div class="demo-images">
+                <img src="assets/working1.png" alt="Step 1: Select text and right-click to fact-check">
+                <img src="assets/working2.png" alt="Step 2: View fact-check results from trusted sources">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-box">
+            <h2>Start Fact-Checking Today</h2>
+            <p>Download the free Chrome extension and join the fight against misinformation.</p>
+            <a href="assets/FakeNewsChromeExtension.zip" class="btn-primary" download>
+                <i class="fa-brands fa-chrome"></i> Download for Chrome - It's Free
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <img src="assets/logo.png" alt="Tathya.AI">
+                <span>&copy; 2025 Tathya.AI. All rights reserved.</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/imshashwataggarwal" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shashwataggarwal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="founder-credit">
+                <span>Founded by <a href="https://www.linkedin.com/in/shashwataggarwal" target="_blank" rel="noopener noreferrer">Shashwat Aggarwal</a></span>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
